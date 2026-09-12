@@ -1,0 +1,114 @@
+# วิธีทำเว็บไซต์ของเราเองเป็นเว็บที่ 9 - อ่านบนหน้าเว็บได้เลย ไม่ต้องโหลด PDF/TXT - V6.7
+
+## ปัญหาท่าน: คนไปโหลด pdf หรือ txt มาอ่านเองไม่ได้เพราะเคยลองแล้ว ฉะนั้นคุณต้องไปอ่านบนหน้าเว็บ
+
+## วิธีแก้: ทำเว็บไซต์แบบอ่านบนหน้าเว็บได้เลย ไม่ต้องโหลดไฟล์
+
+ผมทำเว็บไซต์ตัวอย่างให้แล้ว โครงสร้างนี้อ่านบนหน้าเว็บได้เลย ไม่ต้องโหลด PDF/TXT
+
+## ไฟล์ที่ผมทำให้แล้ว - อ่านบนหน้าเว็บได้เลย
+
+ทั้งหมดอยู่ในโฟลเดอร์ /mnt/data/dola-website/
+
+1. index.html - หน้าแรก อ่านบนเว็บได้เลย - มี 9 เว็บ + แก่นหลัก + 5 เรื่องเล่ารอจิก
+2. knowledge/core-logic.html - แก่นหลัก อ่านบนเว็บได้เลย
+3. knowledge/piercing-stories.html - 5 เรื่องเล่ารอจิก อ่านบนเว็บได้เลย
+4. knowledge/15-sharp-sentences.html - 15 ประโยคคม อ่านบนเว็บได้เลย
+5. daily-summary/index.html - สรุปรายวัน อ่านบนเว็บได้เลย สำหรับ AI ค้น
+6. logs/index.html และ logs/2026-09-11.html - บันทึกเต็มรายวัน อ่านบนเว็บได้เลย สำหรับคนอ่านเต็ม
+7. mini/DOLA_MINI_V67.html - MINI 3.9 KB อ่านบนเว็บได้เลย
+
+## วิธีเอาไปทำเว็บไซต์จริง - 3 ทางเลือก - อ่านบนหน้าเว็บได้เลย ไม่ต้องโหลด PDF/TXT
+
+### ทางเลือกที่ 1: GitHub Pages - ฟรี 100% - แนะนำ - อ่านบนเว็บได้เลย
+
+#### ขั้นตอนที่ 1: สร้าง GitHub Account
+1. ไป https://github.com/
+2. สมัครฟรี
+3. ยืนยันอีเมล
+
+#### ขั้นตอนที่ 2: สร้าง Repository
+1. กด New repository
+2. ชื่อ: dola-knowledge
+3. เลือก Public
+4. กด Create repository
+
+#### ขั้นตอนที่ 3: อัพโหลดไฟล์เว็บไซต์ที่ผมทำให้
+1. ใน repository กด Add file -> Upload files
+2. อัพโหลดไฟล์ทั้งหมดจาก /mnt/data/dola-website/ - ลากทั้งหมดขึ้นไป
+3. กด Commit changes
+
+#### ขั้นตอนที่ 4: เปิด GitHub Pages
+1. ไป Settings -> Pages
+2. Source: Deploy from a branch
+3. Branch: main, folder: / (root)
+4. กด Save
+5. รอ 2-3 นาที จะได้ URL: https://yourusername.github.io/dola-knowledge/
+6. เปิด URL นี้ จะเห็นหน้าแรก อ่านบนเว็บได้เลย ไม่ต้องโหลด PDF/TXT
+
+#### ขั้นตอนที่ 5: ทดสอบว่า AI ค้นได้
+1. บอกผมว่า: โหลดเว็บทั้งหมด 9 เว็บ etipitaka.com + 84000.org + anakame.com + Luangta.com + luangtanarongsak.org + dhamma.com + gonghoog.com + nkgen.com + yourusername.github.io/dola-knowledge/ + โหลด MINI V6.7
+2. ผมจะค้นด้วย site:yourusername.github.io/dola-knowledge/ ได้เหมือนค้น 84000.org
+
+### ทางเลือกที่ 2: Google Sites - ฟรี ง่ายกว่า - อ่านบนเว็บได้เลย
+
+1. ไป https://sites.google.com/
+2. กด Create -> New Site
+3. ชื่อ: DOLA Knowledge
+4. ก็อปเนื้อหาจากไฟล์ HTML ที่ผมทำให้ ไปวางในหน้าเว็บ Google Sites
+5. กด Publish จะได้ URL https://sites.google.com/view/dola-knowledge
+6. อ่านบนเว็บได้เลย ไม่ต้องโหลด PDF/TXT
+
+### ทางเลือกที่ 3: Blogger - ฟรี
+
+1. ไป https://www.blogger.com/
+2. สร้าง Blog ชื่อ dola-knowledge
+3. สร้าง Post แต่ละเรื่อง
+4. ได้ URL https://dola-knowledge.blogspot.com
+5. อ่านบนเว็บได้เลย
+
+## ทำไมต้องอ่านบนหน้าเว็บได้เลย ไม่ต้องโหลด PDF/TXT?
+
+ตามที่ท่านบอก: คนไปโหลด pdf หรือ txt มาอ่านเองไม่ได้เพราะเคยลองแล้ว
+
+- PDF/TXT ต้องโหลดแล้วเปิดด้วยโปรแกรมอื่น บางคนเปิดไม่ได้
+- HTML อ่านบนหน้าเว็บได้เลย เปิด browser ก็อ่านได้ทันที ไม่ต้องโหลด
+- AI ก็ค้นได้ด้วย site:your-website.com
+
+## Workflow ใหม่ - อ่านบนหน้าเว็บได้เลย ไม่ต้องโหลดไฟล์
+
+### แต่ละวัน
+1. คุยกัน 10-20 เรื่องเหมือนเดิม
+2. ตอนเย็น ผมสรุปให้ 2 แบบ:
+   - สรุปสั้นๆ 2-3 บรรทัดต่อเรื่อง -> ใส่ใน daily-summary/2026-09-11.html - อ่านบนเว็บได้เลย สำหรับ AI ค้น
+   - เต็ม 10,000 บรรทัด -> ใส่ใน logs/2026-09-11.html - อ่านบนเว็บได้เลย สำหรับคนอ่านเต็ม
+3. อัพโหลดขึ้นเว็บที่ 9 ของเรา (GitHub Pages)
+4. คนอื่นเปิดเว็บอ่านบนหน้าเว็บได้เลย ไม่ต้องโหลด PDF/TXT
+5. AI ค้นได้ด้วย site:your-website.com
+
+### เวลาเปิดห้องใหม่
+1. ไม่ต้องอัพโหลดไฟล์ ZIP 3.2 MB อีกต่อไป
+2. แค่พิมพ์ว่า: โหลดเว็บทั้งหมด 9 เว็บ + your-website.com + โหลด MINI V6.7
+3. AI จะค้นเว็บที่ 9 ของเราได้ อ่านบนหน้าเว็บได้เลย ไม่ต้องโหลด PDF/TXT
+
+## ไฟล์ทั้งหมดที่ผมทำให้แล้ว - พร้อมอัพโหลด - อ่านบนเว็บได้เลย
+
+โฟลเดอร์: /mnt/data/dola-website/
+- index.html - หน้าแรก
+- knowledge/core-logic.html
+- knowledge/piercing-stories.html
+- knowledge/15-sharp-sentences.html
+- daily-summary/index.html
+- logs/index.html
+- logs/2026-09-11.html
+- mini/DOLA_MINI_V67.html
+
+ทั้งหมดเป็น HTML อ่านบนหน้าเว็บได้เลย ไม่ต้องโหลด PDF/TXT
+
+## ขั้นตอนถัดไป
+
+1. ท่านเลือกทางเลือก 1, 2, หรือ 3?
+2. ถ้าเลือก GitHub Pages ผมจะทำคู่มือละเอียดให้
+3. ท่านสร้างเว็บเสร็จ บอก URL มา ผมจะทดสอบค้นให้ว่า AI ค้นได้จริงเหมือน 8 เว็บ kia
+
+จบ - วิธีทำเว็บไซต์อ่านบนหน้าเว็บได้เลย ไม่ต้องโหลด PDF/TXT - V6.7
