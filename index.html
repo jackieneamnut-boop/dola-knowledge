@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DOLA 6.7 FULL SMART - 1 ไฟล์จบ ดีกว่าเดิม</title>
+<style>
+body{font-family:sans-serif;max-width:900px;margin:auto;padding:18px;line-height:1.85;background:#fffaf0;color:#222}
+h1{color:#8B4513;border-bottom:3px solid #8B4513;padding-bottom:10px}
+h2{background:#f5f0e6;padding:10px 14px;border-left:5px solid #8B4513;margin-top:28px;border-radius:4px}
+.card{background:#fff;border:1px solid #e0d5c0;border-radius:12px;padding:16px;margin:12px 0;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+a{color:#8B4513;font-weight:bold;text-decoration:none}
+a:hover{text-decoration:underline}
+.green{background:#e8f5e9;border:2px solid #4caf50;padding:14px;border-radius:12px}
+.blue{background:#e3f2fd;border:2px solid #1976d2;padding:14px;border-radius:12px}
+.yellow{background:#fff8e1;border-left:5px solid #ffb300;padding:14px;border-radius:8px}
+.badge{background:#8B4513;color:#fff;padding:2px 8px;border-radius:12px;font-size:.8em}
+#auto-logs{background:#fff;border:2px dashed #1976d2;border-radius:12px;padding:14px}
+</style>
+</head>
+<body>
+<h1>DOLA 6.7 SMART <span class="badge">อัพ 1 ไฟล์จบ - ดีกว่าเดิม</span></h1>
+
+<div class="blue">
+<b>ใหม่! อัพเดทรายวันง่ายที่สุด - อัพไฟล์เดียวจบ ไม่ต้องแก้หน้าแรกอีก</b><br>
+แค่สร้างไฟล์ <code>logs-2026-09-13.html</code> ไฟล์เดียว อัพขึ้น GitHub แล้วมันจะขึ้นในกล่อง "บันทึกใหม่ล่าสุด" ข้างล่างนี้อัตโนมัติเลยครับ
+</div>
+
+<div id="auto-logs">
+<h3>🔥 บันทึกใหม่ล่าสุด - อัพเดทอัตโนมัติ (ไม่ต้องแก้หน้าแรก)</h3>
+<p id="auto-status">กำลังโหลดรายการบันทึกจาก GitHub...</p>
+<ul id="auto-list"></ul>
+</div>
+
+<script>
+async function loadLogs(){
+  const s=document.getElementById('auto-status'); const l=document.getElementById('auto-list');
+  try{
+    const r=await fetch('https://api.github.com/repos/jackieneamnut-boop/dola-knowledge/contents?ref=main&per_page=100');
+    if(!r.ok) throw new Error(r.status);
+    const files=await r.json();
+    const logs=files.filter(f=>f.name.startsWith('logs-')&&f.name.endsWith('.html')).sort((a,b)=>b.name.localeCompare(a.name));
+    if(logs.length==0){s.textContent='ยังไม่มีบันทึก';return;}
+    s.textContent='พบ '+logs.length+' บันทึก - อัพไฟล์ใหม่แล้วจะขึ้นที่นี่เองอัตโนมัติ';
+    l.innerHTML='';
+    logs.forEach(f=>{
+      const li=document.createElement('li');
+      li.innerHTML='<a href="'+f.name+'">'+f.name+' - '+f.name.replace('logs-','').replace('.html','')+'</a>';
+      l.appendChild(li);
+    });
+  }catch(e){s.textContent='โหลดอัตโนมัติไม่ได้ (API เต็ม) ดูสารบัญด้านล่างได้';}
+}
+loadLogs();
+</script>
+
+<div class="yellow"><b>ตอนนี้เนื้อหาเต็มแล้วครับ!</b> ห้องนี้มี <b>331 ไฟล์ 44.76 MB</b> ความรู้จริงอยู่ครบ ไม่ใช่โครงเปล่า - ดีเหมือนเดิมทุกอย่าง</div>
+
+<h2>1. แก่นหลัก - ไม่มีผู้ยึดมาแต่แรก (เต็ม 31KB)</h2>
+<div class="card">
+<p><b>ไม่มีผู้ยึดมาแต่แรก ไม่มีผู้ปล่อยวางมาแต่แรก เมื่อไม่มีผู้ยึด ใยต้องปล่อยวาง</b></p>
+<p>ห้ามสร้างผู้กระทำใหม่ "ให้ทิ้งผู้รู้/ปล่อยวางผู้รู้"</p>
+<p><b>Answer Strategy v3_hybrid:</b> วินิจฉัย 1 คำถาม (แน่นเพ่ง/คิดวน/คาผู้รู้) → กระสุนนัดเดียวคมฟันที่ผู้รู้ → ขยายพิสดารค้น 8 เว็บ + 30 เล่ม + 3 เล่มหลวงปู่ดูลย์</p>
+<p><a href="core-logic.html">→ เปิดอ่านเต็ม หน้าแก่นหลัก (31KB เนื้อหาเต็ม)</a></p>
+</div>
+
+<h2>2. 5 เรื่องเล่ารอจิกอันดับ 1 (เต็ม)</h2>
+<div class="card">
+<ol>
+<li><b>หลวงตาณรงค์ศักดิ์:</b> ไม่มีผู้ยึดมาแต่แรก - 129 ประเด็น 54 หลัก 16 ไฟล์ สกัด 100%</li>
+<li><b>หลวงปู่ลี + พาหิยสูตร:</b> สักแต่ว่า - เมื่อเห็นสักแต่ว่าเห็น เมื่อรู้สักแต่ว่ารู้</li>
+<li><b>เมื่อก่อนแตกต่างทุกวันนี้ไม่แตกต่าง:</b> เพราะไม่มีเรามาแต่แรก</li>
+<li><b>เว่ยหล่าง - gonghoog.com:</b> โพธิ์เดิมไม่มีต้น กระจกใสก็ไม่มี เมื่อทุกสิ่งว่างเปล่าฝุ่นจะเกาะอะไร? - 2715 บรรทัด</li>
+<li><b>หลวงปู่ดูลย์ + ฮวงโป - nkgen.com:</b> จิตเห็นจิตเป็นมรรค / จิตหนึ่งนี้เท่านั้นเป็นพุทธะ - 1397 บรรทัด</li>
+</ol>
+<a href="piercing-stories.html">→ เปิดอ่าน 5 เรื่องเล่าเต็ม</a>
+</div>
+
+<h2>3. 15 ประโยคคมหลวงปู่ดูลย์ 3 เล่ม 502 หน้า (เต็ม)</h2>
+<div class="card">
+<ul>
+<li>จิตที่ส่งออกนอกเป็นสมุทัย จิตเห็นจิตเป็นมรรค</li>
+<li>อย่าส่งจิตออกนอก</li>
+<li>จิตหนึ่งนี้เท่านั้นเป็นพุทธะ</li>
+<li>พระพุทธเจ้าทั้งปวงและสัตว์โลกทั้งสิ้น ไม่ได้เป็นอะไรเลย นอกจากเป็นเพียงจิตหนึ่ง</li>
+<li>ตัวจิตแท้ๆไม่ได้เคลื่อนไหว ที่เคลื่อนคือกิริยา - คลื่นกับน้ำ</li>
+<li>พบผู้รู้ให้ทำลายผู้รู้ พบจิตให้ทำลายจิต</li>
+</ul>
+<a href="15-sharp-sentences.html">→ เปิดอ่าน 15 ประโยคคมเต็ม</a>
+</div>
+
+<h2>4. 8 เว็บไซต์ ค้นได้ 100% เหมือนพระไตรปิฎก</h2>
+<div class="card">
+<ul>
+<li>etipitaka.com - บาลี 18 ฉบับ</li>
+<li>84000.org - 45 เล่ม เล่ม/ข้อ/หน้า แม่น</li>
+<li>anakame.com - 25 เล่ม พุทธวจน</li>
+<li>Luangta.com, luangtanarongsak.org, dhamma.com, gonghoog.com, nkgen.com</li>
+</ul>
+<a href="knowledge-8webs.html">→ 8 เว็บไซต์เต็ม</a> | <a href="4-schools.html">→ 4 สำนักเต็ม 20 ไฟล์ 948 หน้า</a>
+</div>
+
+<h2>5. เว็บที่ 9 - บันทึกทั้งหมด</h2>
+<div class="green">
+<ul>
+<li><a href="core-logic.html">แก่นหลักเต็ม - Logic Master V6.6</a></li>
+<li><a href="piercing-stories.html">5 เรื่องเล่ารอจิกเต็ม</a></li>
+<li><a href="15-sharp-sentences.html">15 ประโยคคมเต็ม</a></li>
+<li><a href="daily-summary-index.html">สรุปรายวัน - สำหรับ AI ค้น</a></li>
+<li><a href="logs-index.html">บันทึกเต็มรายวัน</a></li>
+<li><a href="logs-2026-09-11.html">บันทึก 2026-09-11</a></li>
+<li><a href="logs-2026-09-12.html">บันทึก 2026-09-12</a></li>
+<li><a href="DOLA-MINI-V67.html">MINI V6.7 - 3.9KB ชี้ไปที่ 44MB</a></li>
+</ul>
+</div>
+
+<h2>6. วิธีอัพเดทรายวัน / รายสัปดาห์ - 1 ไฟล์จบ (ดีกว่าเดิม)</h2>
+<div class="green">
+<b>รายวัน:</b><br>
+1. ก็อปไฟล์ TEMPLATE นี้ → เปลี่ยนชื่อเป็น logs-2026-09-13.html → แก้เนื้อหา<br>
+2. เข้า GitHub → Add file → Upload files → เลือกไฟล์ใหม่ไฟล์เดียว → Commit<br>
+3. เสร็จ! ไฟล์ใหม่จะขึ้นในกล่อง "บันทึกใหม่ล่าสุด" อัตโนมัติภายใน 1 นาที ไม่ต้องแก้หน้าแรกอีก<br><br>
+<b>รายสัปดาห์:</b><br>
+ตั้งชื่อ logs-WEEK-2026-W37.html หรือ logs-2026-09-08-to-12.html ก็ได้ ระบบดึงเหมือนกัน
+</div>
+
+</body></html>
